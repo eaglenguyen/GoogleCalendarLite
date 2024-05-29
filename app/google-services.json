@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "913071572671",
+    "project_id": "calandermvvm",
+    "storage_bucket": "calandermvvm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913071572671:android:ecd67b9d3047af6d76280a",
+        "android_client_info": {
+          "package_name": "com.example.calandermvvm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArvZWp2cyGPhxsKDrm6R-zv2LW9Tcryuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

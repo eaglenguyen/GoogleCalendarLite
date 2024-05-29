@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.calandermvvm.presentation.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.calandermvvm.presentation.calendar.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_eventFragment"
+            app:destination="@id/eventFragment" />
+        <argument
+            android:name="user"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.example.calandermvvm.presentation.calendar.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" >
+        <argument
+            android:name="day"
+            app:argType="integer" />
+        <argument
+            android:name="month"
+            app:argType="integer" />
+        <argument
+            android:name="year"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_eventFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+</navigation>
