@@ -22,6 +22,7 @@ import com.example.calandermvvm.OnClick
 import com.example.calandermvvm.R
 import com.example.calandermvvm.TAG
 import com.example.calandermvvm.databinding.FragmentEventBinding
+import com.example.calandermvvm.notificationID
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -133,14 +134,14 @@ class EventFragment : Fragment(), OnClick {
 
     private fun showNotification(time: Long, title: String) {
         val activityIntent = Intent(requireContext().applicationContext, EventNotificationReceiver::class.java).apply {
-            putExtra("eventExtra", title)
+            putExtra("eventTitle", title)
 
         }
         val eventIntent = PendingIntent.getBroadcast(
             requireContext().applicationContext,
-            1,
+            notificationID,
             activityIntent,
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) PendingIntent.FLAG_IMMUTABLE else 0
+            PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
         )
 
         val alarmManager = requireContext().getSystemService(Context.ALARM_SERVICE) as AlarmManager

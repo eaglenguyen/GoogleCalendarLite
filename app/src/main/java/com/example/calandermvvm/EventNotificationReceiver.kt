@@ -8,6 +8,8 @@ import androidx.core.app.NotificationCompat
 
 const val channelID = "1"
 const val TAG = "FIRESTORE"
+const val notificationID = 1
+
 
 
 class EventNotificationReceiver: BroadcastReceiver() {
@@ -19,11 +21,11 @@ class EventNotificationReceiver: BroadcastReceiver() {
         val notification = NotificationCompat.Builder(context, channelID)
             .setSmallIcon(R.drawable.baseline_baby_changing_station_24)
             .setContentTitle("Reminder")
-            .setContentText(intent.getStringExtra("eventExtra"))
+            .setContentText(intent.getStringExtra("eventTitle"))
             .build()
 
         notificationManager.notify(
-            1,
+            notificationID,
             notification
         )
     }
