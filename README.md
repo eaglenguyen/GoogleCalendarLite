@@ -14,6 +14,7 @@ It is a clone of the Google Calendar, featuring Firebase authentication, event s
 
 ## Technologies Used
 * XML: Used for designing the user interface.
+* Clean Architecture: Ensuring a maintainable and scalable codebase by separating concerns.
 * Firebase Authentication: For creating and logging in accounts.
 * Firebase Firestore: For storing events.
 * AlarmManager: For scheduling local notifications.
