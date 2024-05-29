@@ -20,5 +20,5 @@ It is a clone of the Google Calendar, featuring Firebase authentication, event s
 
 ## Quick Look
 
- ![ezgif com-video-to-gif-converter](https://github.com/eaglenguyen/CalanderMVVM/assets/100715509/e080011e-0cb9-4726-ab7e-855ab085becd)
+![ezgif com-video-to-gif-converter (1)](https://github.com/eaglenguyen/CalanderMVVM/assets/100715509/a5c5c015-e5de-4fd7-8d13-f075dbcb9c6c)
 
