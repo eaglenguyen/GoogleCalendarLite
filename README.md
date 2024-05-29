@@ -8,7 +8,7 @@ It is a clone of the Google Calendar, featuring Firebase authentication, event s
 ## Features
 
 * Firebase Authentication: Secure authentication for users using Firebase Authentication.
-* Firestore Database: Save, delete, and retrieve events to/from Firebase Firestore database.
+* Firestore Database: Save, delete, and retrieve events to/from Firestore database.
 * Local Notifications: Get notified about your events through local notifications.
 * Google Calendar Clone: Functional and aesthetic resemblance to Google Calendar.
 
