@@ -1,8 +1,7 @@
 # GoogleCalendarClone
 
 ## Preface
-This is a Kotlin-based Android application developed in XML. 
-It is a clone of the Google Calendar, featuring Firebase authentication, event saving to Firestore database, and local notifications for events. <br>
+A Google Calendar clone, featuring Firebase authentication, event saving to Firestore database, and local notifications for events! <br>
 
 
 ## Features
