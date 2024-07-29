@@ -1,7 +1,8 @@
 # GoogleCalendarClone
 
 ## Preface
-A Google Calendar clone, featuring Firebase authentication, event saving to Firestore database, and local notifications for events! Jetpack Compose version currently in the works! <br>
+A Google Calendar clone, featuring Firebase authentication, event saving to Firestore database, and local notifications for events! <br>
+Jetpack Compose version currently in the works, stay tuned! <br>
 
 
 ## Features
