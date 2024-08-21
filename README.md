@@ -1,4 +1,4 @@
-# GoogleCalendarClone
+# GoogleCalendar-XML
 
 ## Preface
 A Google Calendar clone, featuring Firebase authentication, event saving to Firestore database, and local notifications for events! <br>
